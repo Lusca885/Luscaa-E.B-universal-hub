@@ -1,8 +1,8 @@
 game.Players.LocalPlayer.PlayerGui["anti Luscaa"].Disabled = true
 ---------------------------------Menu Pedroxz Menu---------------------------------
     --Script
-    local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/pedroxzytbhypee/SourcePedrox8/main/README.md')))()
-    
+    local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Lusca885/Text-orion/refs/heads/main/README.md"))()
+ 
     --Config do Script
     local Window = OrionLib:MakeWindow({Name = "                               Chaos Hub E.B ", HidePremium = false, SaveConfig = true, IntroEnabled = false})
     local Player = game.Players.LocalPlayer
