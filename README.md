@@ -11,12 +11,6 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/ped
         Time = 5
     })
 
-    --Valores _G. Para desativar ou desativar ou parte da key/texto
-    _G.Aimbot = true
-    _G.Loop = true
-    _G.Key = "KeyPedroxz"
-    _G.KeyInput = "string"
-
     --Funcao do anti algema
 	function Algema()
 		while _G.Algema == true do
@@ -131,29 +125,7 @@ wait(0.1)
               end    
             wait(0.1)
             end
-
-    function MakeScriptHub()
-        local Window = OrionLib:MakeWindow({Name = "Pedroxz Menu V2", HidePremium = false, SaveConfig = true, IntroEnabled = true, IntroText = "Pedroxz Menu V2"})
-    end
-
-    function CorrectKeyNotification()
-    OrionLib:MakeNotification({
-        Name = "Correta key",
-        Content = "Key Injetada",
-        Image = "rbxassetid://7733715400",
-        Time = 5
-        })
-    end   
-
-    function IncorrectKeyNotification()
-    OrionLib:MakeNotification({
-        Name = "Key Incorreta",
-        Content = "Key Error",
-        Image = "rbxassetid://4483345998",
-        Time = 5
-        })
-    end       
-
+	    
     --Funcao ativar/desativar
     function Aimbot()
         while _G.Aimbot == true do
@@ -161,43 +133,7 @@ wait(0.1)
             wait(0.1)
         end
     end
-
-    --Scripts Section e botao
-    local KeyTab = Window:MakeTab({
-        Name = "Key Hub",
-        Icon = "rbxassetid://7733965118",
-        PremiumOnly = false      
-    })   
-local Section = KeyTab:AddSection({
-	Name = "Key Hub"
-}) 
-    KeyTab:AddTextbox({
-        Name = "Key hub troll (Nao disponivel)",
-        Default = "Coloque a key aqui!",
-        TextDisappear = true,
-        Callback = function(Value)
-            _G.KeyInput = Value
-        end	  
-    })
-    KeyTab:AddButton({
-        Name = "Checkar Key",
-        Callback = function()
-            if _G.KeyInput == _G.Key then
-            MakeScriptHub()
-            CorrectKeyNotification()
-            else
-                IncorrectKeyNotification()
-             end
-          end    
-    })
-local Section = KeyTab:AddSection({
-	Name = "Hub troll no key"
-})
-KeyTab:AddButton({
-	Name = "Hub Troll No Key",
-	Callback = function()
-        local version = "1.5"
-
+    
 local StarterGui = game:GetService("StarterGui")
 local showNotification = true
 
@@ -1160,26 +1096,6 @@ ConfigTab:AddBind({
 	Callback = function()
 		print("press")
 	end  
-})
-ConfigTab:AddButton({
-    Name = "yt: Pedroxz63",
-    Callback = function()
-      end  
-	})
-ConfigTab:AddButton({
-    Name = "tiktok: @Pedroxz63",
-    Callback = function()
-      end  
-})
-ConfigTab:AddButton({
-    Name = "insta: @Pedroxz63_ofc",
-    Callback = function()
-      end  
-})
-ConfigTab:AddButton({
-    Name = "@pedroxzoficial#0000",
-    Callback = function()
-      end  
 })
 local Section = ConfigTab:AddSection({
 	Name = "Opcoes basicas"
