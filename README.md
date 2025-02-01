@@ -1,15 +1,15 @@
-game.Players.LocalPlayer.PlayerGui["ANT PEDROX"].Disabled = true
+game.Players.LocalPlayer.PlayerGui["anti Luscaa"].Disabled = true
 ---------------------------------Menu Pedroxz Menu---------------------------------
     --Script
     local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/pedroxzytbhypee/SourcePedrox8/main/README.md')))()
     
     --Config do Script
-    local Window = OrionLib:MakeWindow({Name = "                              💎 Pedroxz Menu V2.0.1 💎", HidePremium = false, SaveConfig = true, IntroEnabled = false})
+    local Window = OrionLib:MakeWindow({Name = "                               Chaos Hub E.B ", HidePremium = false, SaveConfig = true, IntroEnabled = false})
     local Player = game.Players.LocalPlayer
 
     OrionLib:MakeNotification({
-        Name = "Bem-vindo no Pedroxz Menu!",
-        Content = "Dirvita-se usando Pedroxz Menu. Bem-Vindo "..Player.Name.." ",
+        Name = "Welcome to Chaos Hub!",
+        Content = "Welcome to Chaos Hub"..Player.Name.." ",
         Image = "rbxassetid://7733715400",
         Time = 5
     })
