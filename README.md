@@ -1,7 +1,7 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/pedroxzytbhypee/SourcePedrox8/main/README.md')))()
     
     --Config do Script
-    local Window = OrionLib:MakeWindow({Name = "                               Chaos Hub E.B ", HidePremium = false, SaveConfig = true, IntroEnabled = false})
+    local Window = OrionLib:MakeWindow({Name = " Chaos Hub E.B ", HidePremium = false, SaveConfig = true, IntroEnabled = false})
     local Player = game.Players.LocalPlayer
 
     OrionLib:MakeNotification({
